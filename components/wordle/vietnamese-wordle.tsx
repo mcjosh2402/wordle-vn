@@ -2,8 +2,8 @@
 
 import { useState, useEffect, useCallback, useMemo } from "react"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { RotateCcw, HelpCircle, Loader2, Github, CornerDownLeft, Delete } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { RotateCcw, HelpCircle, Loader2, CornerDownLeft, Delete } from "lucide-react"
 import TutorialModal from "@/components/wordle/tutorial-modal"
 import { toast } from "react-toastify"
 import { motion, AnimatePresence } from "framer-motion"
@@ -786,24 +786,6 @@ export default function VietnameseWordle() {
             </div>
           </div>
         </CardContent>
-        <CardFooter className="flex flex-col items-center justify-center pt-3 pb-2 border-t border-gray-200 dark:border-gray-700">
-          <p className="text-xs text-gray-500 dark:text-gray-500 flex items-center gap-2">
-            <a
-              href="https://github.com/minhqnd/wordle-vietnamese"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
-            >
-              <Github className="h-4 w-4" />
-            </a>
-            <span>Make with ❤️ by <a
-              href="https://instagram.com/minhqnd"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium hover:underline transition-colors"
-            >@minhqnd</a>.</span>
-          </p>
-        </CardFooter>
       </Card>
     </div>
   )
